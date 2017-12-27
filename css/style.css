@@ -1,0 +1,307 @@
+@charset "UTF-8";
+body, html {
+  width: 100%;
+  height: 100%;
+  background: #fff; }
+
+.header {
+  width: 100%;
+  border: 1px solid #dadcdd; }
+  .header .info li {
+    padding: 0 20px;
+    background: url(../images/line.png) no-repeat right center;
+    font: 12px/30px "微软雅黑";
+    color: #565656; }
+    .header .info li a {
+      color: #565656; }
+  .header .info .news a {
+    padding-left: 18px;
+    background: url(../images/clock.png) no-repeat left center; }
+    .header .info .news a em {
+      padding: 2px;
+      border-radius: 2px;
+      background: #fe6600;
+      color: #fff; }
+    .header .info .news a i {
+      padding: 4px 3px;
+      background: url(../images/sanjiao.png) no-repeat center;
+      margin-left: 6px; }
+  .header .info .account a {
+    padding-left: 18px;
+    background: url(../images/account.png) no-repeat left center; }
+  .header .info .last {
+    background: none; }
+
+.top {
+  width: 100%;
+  position: relative; }
+  .top h2 {
+    width: 202px;
+    height: 79px;
+    position: relative; }
+    .top h2 img {
+      position: absolute;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+      height: 34px; }
+  .top .tuijian {
+    margin-left: 21px; }
+    .top .tuijian dt, .top .tuijian dd {
+      font: 12px/76px "微软雅黑";
+      margin: 0 5px; }
+      .top .tuijian dt a, .top .tuijian dd a {
+        padding: 7px 11px;
+        color: #000; }
+      .top .tuijian dt .cjhy, .top .tuijian dd .cjhy {
+        border: 2px solid #ff6161;
+        background: #fff2f2; }
+      .top .tuijian dt .qqhy, .top .tuijian dd .qqhy {
+        border: 2px solid #2fcb1f;
+        background: #f4fff2; }
+      .top .tuijian dt .qqhz, .top .tuijian dd .qqhz {
+        border: 2px solid #ffea87;
+        background: #fffef2; }
+      .top .tuijian dt .qqlz, .top .tuijian dd .qqlz {
+        border: 2px solid #189aff;
+        background: #fdf2ff; }
+      .top .tuijian dt .qqlvz, .top .tuijian dd .qqlvz {
+        border: 2px solid #ae2fff;
+        background: #fdf2ff; }
+      .top .tuijian dt .hlw, .top .tuijian dd .hlw {
+        border: 2px solid #ff6161;
+        background: #fff2f2; }
+    .top .tuijian dt {
+      position: relative; }
+      .top .tuijian dt a {
+        background: #ff8a00;
+        color: #fff; }
+    .top .tuijian dt::before {
+      content: "";
+      position: absolute;
+      right: -14px;
+      top: 31px;
+      display: block;
+      width: 0;
+      height: 0;
+      border: 8px solid #ff8a00;
+      border-top-color: transparent;
+      border-right-color: transparent;
+      border-bottom-color: transparent; }
+  .top .adv {
+    position: absolute;
+    right: 26px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    padding-left: 28px;
+    display: inline-block;
+    height: 44px;
+    overflow: hidden; }
+    .top .adv li {
+      font: 12px/44px "微软雅黑";
+      background: url(../images/laba.png) no-repeat left center;
+      padding-left: 30px; }
+      .top .adv li a {
+        color: #000; }
+    .top .adv li:hover a {
+      text-decoration: underline; }
+
+.nav {
+  width: 100%;
+  background: #33b2f2;
+  height: 35px;
+  padding-top: 1px; }
+  .nav .box {
+    width: 100%;
+    height: 32px;
+    border-top: 1px solid #b0e6f8;
+    border-bottom: 1px solid #b0e6f8; }
+    .nav .box h2 {
+      font: 12px/32px "微软雅黑";
+      color: #87ccf2;
+      text-align: center;
+      width: 92px; }
+    .nav .box ul li {
+      padding: 0 19px;
+      font: 12px/32px "微软雅黑";
+      color: #fff;
+      background: url(../images/line.png) no-repeat right center; }
+      .nav .box ul li a {
+        color: #fff; }
+    .nav .box ul li:hover {
+      background-color: #00a2e6; }
+    .nav .box ul .last {
+      background-image: none; }
+
+.container {
+  width: 100%;
+  margin-top: 22px; }
+  .container .lBox {
+    width: 182px;
+    margin: 0 22px 0 31px;
+    background: #ffffff; }
+    .container .lBox .customerCenter {
+      border: 1px solid #aec1e1;
+      border-radius: 4px; }
+      .container .lBox .customerCenter h2 {
+        font: 15px/50px "微软雅黑";
+        color: #223449;
+        background: #e8eff3 url(../images/accounts.png) no-repeat 25px center;
+        border-bottom: 1px solid #aec1e1;
+        text-indent: 44px; }
+      .container .lBox .customerCenter ul {
+        padding-top: 8px; }
+        .container .lBox .customerCenter ul li {
+          font: 12px/28px "微软雅黑";
+          color: #222222; }
+        .container .lBox .customerCenter ul span {
+          margin-left: 15px;
+          margin-right: 6px; }
+        .container .lBox .customerCenter ul em {
+          margin-left: 6px; }
+        .container .lBox .customerCenter ul a {
+          padding: 7px;
+          background: url(../images/sx.gif) no-repeat center;
+          color: #505050;
+          margin-left: 12px; }
+        .container .lBox .customerCenter ul i {
+          padding: 7px;
+          margin-left: 15px;
+          cursor: pointer;
+          background: url(../images/sj.gif) no-repeat center; }
+        .container .lBox .customerCenter ul .hot {
+          color: #ff0000; }
+      .container .lBox .customerCenter h3 {
+        font: 12px/30px "微软雅黑";
+        text-align: center;
+        margin: 14px 0; }
+        .container .lBox .customerCenter h3 a {
+          padding: 6px 18px;
+          border-radius: 2px;
+          background: #08a2f0;
+          margin: 0 8px;
+          color: #fff; }
+        .container .lBox .customerCenter h3 a:hover {
+          background: #0393dc; }
+        .container .lBox .customerCenter h3 span, .container .lBox .customerCenter h3 em {
+          display: inline-block;
+          vertical-align: top;
+          padding: 9px 6px;
+          font-size: 12px;
+          font-family: "微软雅黑";
+          color: #ffffff;
+          text-align: center;
+          margin: 6px 0 20px 0;
+          cursor: pointer; }
+        .container .lBox .customerCenter h3 span {
+          background: #0088ff;
+          margin-left: 16%; }
+        .container .lBox .customerCenter h3 em {
+          background: #5185b3;
+          margin-left: 6px;
+          padding-left: 22px;
+          background: #f86193 url(../images/fj.png) no-repeat 7px center; }
+    .container .lBox .setCusInfo {
+      margin-top: 13px;
+      border: 1px solid #aec1e1;
+      border-radius: 4px; }
+      .container .lBox .setCusInfo dl dt, .container .lBox .setCusInfo dl dd a {
+        padding-left: 43px;
+        font: 12px/36px "微软雅黑";
+        color: #223449;
+        position: relative; }
+        .container .lBox .setCusInfo dl dt span, .container .lBox .setCusInfo dl dd a span {
+          width: 8px;
+          height: 8px;
+          border-radius: 4px;
+          position: absolute;
+          background: #ff0000;
+          top: -4px;
+          right: -4px; }
+      .container .lBox .setCusInfo dl dt {
+        font-weight: bold;
+        background: url(../images/menu.png) no-repeat 25px center; }
+      .container .lBox .setCusInfo dl .spfl {
+        background: url(../images/spfl.png) no-repeat 24px center; }
+      .container .lBox .setCusInfo dl .wdsc {
+        background: url(../images/wdsc.png) no-repeat 24px center; }
+      .container .lBox .setCusInfo dl .wddd {
+        background: url(../images/wddd.png) no-repeat 24px center; }
+      .container .lBox .setCusInfo dl .wdsh {
+        background: url(../images/wdsh.png) no-repeat 24px center; }
+      .container .lBox .setCusInfo dl .yecz {
+        background: url(../images/yecz.png) no-repeat 24px center; }
+      .container .lBox .setCusInfo dl .czjl {
+        background: url(../images/czjl.png) no-repeat 24px center; }
+      .container .lBox .setCusInfo dl .yemx {
+        background: url(../images/yemx.png) no-repeat 24px center; }
+      .container .lBox .setCusInfo dl .wdxj {
+        background: url(../images/wdxj.png) no-repeat 24px center; }
+      .container .lBox .setCusInfo dl .xjtc {
+        background: url(../images/xjtc.png) no-repeat 24px center; }
+      .container .lBox .setCusInfo dl .tglj {
+        background: url(../images/tglj.png) no-repeat 24px center; }
+      .container .lBox .setCusInfo dl dd a {
+        color: #000; }
+      .container .lBox .setCusInfo dl dd:hover {
+        background: #dae8f5; }
+      .container .lBox .setCusInfo dl .on {
+        background: #dae8f5; }
+    .container .lBox .setCusInfos {
+      padding-bottom: 56px; }
+      .container .lBox .setCusInfos li {
+        padding-left: 36%;
+        font: 12px/36px "微软雅黑";
+        border-bottom: 1px solid #f3f3f3; }
+        .container .lBox .setCusInfos li a {
+          color: #333;
+          position: relative; }
+      .container .lBox .setCusInfos li {
+        border-left: 4px solid #fff; }
+      .container .lBox .setCusInfos li:hover {
+        border-left: 4px solid #0088ff;
+        background-color: #ecf6ff; }
+        .container .lBox .setCusInfos li:hover a {
+          color: #0088ff; }
+      .container .lBox .setCusInfos .sygk {
+        background: url(../images/sygl.png) no-repeat 24% center; }
+      .container .lBox .setCusInfos .spfl {
+        background: url(../images/spfl.png) no-repeat 24% center; }
+      .container .lBox .setCusInfos .wdsc {
+        background: url(../images/wdsc.png) no-repeat 24% center; }
+      .container .lBox .setCusInfos .wddd {
+        background: url(../images/wddd.png) no-repeat 24% center; }
+      .container .lBox .setCusInfos .ddsh {
+        background: url(../images/ddsh.png) no-repeat 24% center; }
+      .container .lBox .setCusInfos .txjl {
+        background: url(../images/txjl.png) no-repeat 24% center; }
+      .container .lBox .setCusInfos .czjl {
+        background: url(../images/czjl.png) no-repeat 24% center; }
+      .container .lBox .setCusInfos .txmx {
+        background: url(../images/txmx.png) no-repeat 24% center; }
+      .container .lBox .setCusInfos .zjmx {
+        background: url(../images/zjmx.png) no-repeat 24% center; }
+      .container .lBox .setCusInfos .wdxj {
+        background: url(../images/wdxj.png) no-repeat 24% center; }
+      .container .lBox .setCusInfos .tcmx {
+        background: url(../images/tcmx.png) no-repeat 24% center; }
+      .container .lBox .setCusInfos .tglj {
+        background: url(../images/tglj.png) no-repeat 24% center; }
+      .container .lBox .setCusInfos .on {
+        border-left: 4px solid #0088ff;
+        background-color: #ecf6ff; }
+        .container .lBox .setCusInfos .on a {
+          color: #0088ff; }
+  .container .fix {
+    position: fixed;
+    top: 0;
+    left: 30px;
+    margin: 0; }
+  .container .rBox {
+    width: 80%;
+    min-height: 715px;
+    position: relative;
+    background: #fff; }

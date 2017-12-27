@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	</head>
+	<body>
+		<!--common公共头部-->
+		<div class="header clearfix">
+			<div class="r">
+				<ul class="info clearfix">
+					<li class="l name">欢迎您,<span>召唤师</span><a href="javascript:;">[退出]</a></li>
+					<li class="l news"><a href="javascript:;">消息<em>11</em><i></i></a></li>
+					<li class="l account"><a href="javascript:;">账户设置</a></li>
+					<li class="l"><a href="javascript:;">直销商系统</a></li>
+					<li class="l"><a href="javascript:;">经销商系统</a></li>
+					<li class="l last"><a href="javascript:;">供货商系统</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="top clearfix">
+			<h2 class="l"><img src=""/></h2>
+			<dl class="tuijian l clearfix">
+	    		<dt class="l"><a href="javascript:;">推荐专区</a></dt>
+	    		<dd class="l"><a href="javascript:;" class="qqhy">理论永久超级会员</a></dd>
+	    		<dd class="l"><a href="javascript:;" class="qqhy">理论永久QQ会员  </a></dd>
+	    		<dd class="l"><a href="javascript:;" class="qqhz">理论永久QQ黄钻</a></dd>
+	    		<dd class="l"><a href="javascript:;" class="qqlz">理论永久QQ蓝钻 </a></dd>
+	    		<dd class="l"><a href="javascript:;" class="qqlvz">理论永久QQ绿钻</a></dd>
+	    		<dd class="l"><a href="javascript:;" class="hlw">理论永久好莱坞</a></dd>
+	    	</dl>
+	    	<!--右边广告-->
+			<div class="adv l">
+				<div class="advBox">
+					<ul>
+	    				<li><a href="javascript:;">卡盟手机端APP下载/免费试用点击下载！1</a></li>
+	    				<li><a href="javascript:;">卡盟手机端APP下载/免费试用点击下载！2</a></li>
+	    				<li><a href="javascript:;">卡盟手机端APP下载/免费试用点击下载！3</a></li>
+	    			</ul>
+				</div>
+			</div>
+		</div>
+		<div class="nav">
+			<div class="box">
+				<h2 class="l">常用链接&gt;</h2>
+				<ul class="clearfix">
+					<li class="l"><a href="javascript:;">商品分类</a></li>
+					<li class="l"><a href="javascript:;">我的收藏</a></li>
+					<li class="l"><a href="javascript:;">我的订单</a></li>
+					<li class="l last"><a href="javascript:;">我的售后</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="container clearfix">
+    	<!--左边区域-->
+	    	<div class="lBox l">
+	    		<!--买家中心-->
+	    		<div class="customerCenter">
+	    			<h2>账户</h2>
+	    			<ul>
+	    				<li><span>编号</span>:<em>10086</em></li>
+	    				<li><span>级别</span>:<em>荣誉店长(v6)</em><i></i></li>
+	    				<li><span>余额</span>:<em class="hot">15231.00</em><a href="javascript:;"></a></li>
+	    				<li><span>上级</span>:<em>系统</em></li>
+	    			</ul>
+	    			<h3>
+	    				<a href="javascript:;">充值</a>
+	    				<a href="javascript:;">升级</a>
+	    			</h3>
+	    		</div>
+	    		<div class="setCusInfo">
+	    			<dl>
+	    				<dt>菜单</dt>
+	    				<dd><a href="javascript:;" class="spfl">商品分类</a></dd>
+	    				<dd><a href="javascript:;" class="wdsc">我的收藏</a></dd>
+	    				<dd><a href="javascript:;" class="wddd">我的订单</a></dd>
+	    				<dd><a href="javascript:;" class="wdsh">我的售后</a></dd>
+	    			</dl>
+	    			<dl>
+	    				<dt>资金</dt>
+	    				<dd><a href="javascript:;" class="yecz">余额充值</a></dd>
+	    				<dd><a href="javascript:;" class="czjl">充值记录</a></dd>
+	    				<dd><a href="javascript:;" class="yemx">余额明细</a></dd>
+	    			</dl>
+	    			<dl>
+	    				<dt>代理</dt>
+	    				<dd><a href="javascript:;" class="wdxj">我的下级</a></dd>
+	    				<dd><a href="javascript:;" class="xjtc">下级提成</a></dd>
+	    				<dd><a href="javascript:;" class="tglj">推广链接</a></dd>
+	    			</dl>
+	    		</div>
+	    	</div>
+	    	<!--右边内容区域-->
+	    	<div class="rBox l">
+	    		<!--订单售后-->
+	    		
+	    	</div>
+	    </div>
+	</body>
+	<script src="js/plugins/jquery.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		var timer;
+		adv(".advBox",2000);
+		mouseEvent(".advBox",2000);
+		// 广告轮播
+		function adv(obj,s){
+			var height = $(obj).height();
+			var perH = $(obj).find("li").eq(0).height();
+			var tops;//记录鼠标移入广告时的margintop值
+			timer=setInterval(function(){
+				var top = parseInt($(obj).css("margin-top"));
+				$(obj).animate({"margin-top":top-perH},function(){
+					if(Math.abs(parseInt($(obj).css("margin-top")))>height - perH){
+						$(obj).css({"margin-top":0});
+					};
+				})
+			},s);
+		};
+		//鼠标进入广告和鼠标移出广告
+		function mouseEvent(obj,s){
+			$(obj).mouseenter(function(){
+				clearInterval(timer);
+			});
+			$(obj).mouseleave(function(){
+				adv(".advBox",s);
+			});
+		};
+	</script>
+</html>
